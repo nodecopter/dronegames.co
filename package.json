@@ -1,7 +1,10 @@
 {
-  "name": "node-example-csanz",
-  "version": "0.0.1",
-  "dependencies": {
+    "name"        : "DroneOlympics"
+  , "version"     : "0.0.1"
+  , "homepage"    : "http://aqueous-woodland-8349.herokuapp.com/"
+  , "description" : "PeerGraph"
+  , "author"      : "Christian Sanz <chrissanz@gmail.com>"
+  , "dependencies": {
         "async"             : "0.1.18"
       , "express"           : "2.5.4"
       , "express-messages"  : "0.0.x"
@@ -12,6 +15,17 @@
       , "mongoose"          : "2.5.10"
       , "jade"              : "0.25.x"
       , "stylus"            : "0.22.x"
-      , "nib"               : "0.0.x"
-  }
+      , "nib"               : "0.3.x"
+      , "pusher"            : "0.0.x"
+      , "nodemailer"        : "0.3.21"
+      , "underscore"        : "1.1.x"
+      , "request"           : "2.9.153"
+      , "winston"           : "0.5.10"
+      , "kue"               : "0.3.4"
+    }
+  , "main"    : "./index.js"
+  , "engines" : { 
+      "node": "0.6.x" 
+    , "npm" : "1.0.x"
+    }
 }
