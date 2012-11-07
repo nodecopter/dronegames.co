@@ -1,0 +1,8 @@
+ASSETS:
+
+Metro style buttons:
+http://ace-subido.github.com/css3-microsoft-metro-buttons/index.html
+
+Google map:
+http://gmap.nurtext.de/
+

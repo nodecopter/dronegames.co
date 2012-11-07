@@ -1,0 +1,17 @@
+{
+  "name": "node-example-csanz",
+  "version": "0.0.1",
+  "dependencies": {
+        "async"             : "0.1.18"
+      , "express"           : "2.5.4"
+      , "express-messages"  : "0.0.x"
+      , "express-resource"  : "0.2.4"
+      , "express-mongoose"  : "0.0.x"
+      , "express-expose"    : "0.2.2"
+      , "stylus"            : "0.13.x"
+      , "mongoose"          : "2.5.10"
+      , "jade"              : "0.25.x"
+      , "stylus"            : "0.22.x"
+      , "nib"               : "0.0.x"
+  }
+}
