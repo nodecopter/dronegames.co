@@ -22,7 +22,7 @@
             li
               a.anchorLink(href='#portfolio') Who is Involved
             li
-              a.anchorLink(href='#contact') Venue
+              a.anchorLink(href='#contact') Venue & Contact
             li
               a(href='#purchase') Apply
 // Start Callout
@@ -30,7 +30,7 @@
   .container
     .row
       .span12.companycallout
-        h1 
+        h1 DEC 1ST
         p
           a.m-btn.big
             | Apply
@@ -45,81 +45,99 @@
         | Top developers compete on a series of drone programming challenges against each other
       .row-fluid
         .span4
-          h3 About Drone Olympics
+          h3 Details
           p
-            | Drone Olympics .
+            | Coming soon!
         .span4
-          h3 Challenges
+          h3 Olympics
           p
             | The challenges consists of precision landing, picking up items, obstacle course and synchronized flying.
         .span4
           h3 Free Form
           p
-            | Simple to follow code will have you working quickly. All you have to do is change the logo, map, 1 email address, some text and you're ready to go.
+            | Hackers choosing to program the drones using Node.js can enter our #MiniNodeCopter event
 
 // PORTFOLIO
 #portfolio.row.section
   .container
     h2 Who is Involved
-    p.intro Most notable developers, organizers + top companies and universities
+    p.intro Most notable developers, organizers and companies 
     // Start Portfolio Navigation
     nav.primary.m-btn-group.toggle-buttons.clearfix
       ul
         li
           a.m-btn.selected(href='#', data-filter='*') All
         li
-          a.m-btn(href='#', data-filter='.web') Organizers
+          a.m-btn(href='#', data-filter='.organizers') Organizers
         li
-          a.m-btn(href='#', data-filter='.ill') Primum Sponsors
+          a.m-btn(href='#', data-filter='.sponsors') Primum Sponsors
         li
-          a.m-btn(href='#', data-filter='.logo') Judges
+          a.m-btn(href='#', data-filter='.judge') Judges
         li
-          a.m-btn(href='#', data-filter='.video') Contributors
+          a.m-btn(href='#', data-filter='.contributor') Contributors
         li
           a.m-btn(href='#', data-filter='.print') Media Sponsors
     // START Portfolio items
     section.main.clearfix
       .portfolio
-        figure.entry.web
-          a(href='http://twitter.com/csanz')
-            img(src='https://sphotos-b.xx.fbcdn.net/hphotos-ash4/404054_10150978162322411_1960154309_n.jpg', alt='')
-        figure.entry.web
-          a(href='http://twitter.com/csanz')
-            img(src='https://sphotos-b.xx.fbcdn.net/hphotos-ash4/404054_10150978162322411_1960154309_n.jpg', alt='')
-        figure.entry.web
-          img(src='https://lh6.googleusercontent.com/-Rtnol4sOjeo/AAAAAAAAAAI/AAAAAAAAASA/DAdcHfrBEL0/s250-c-k/photo.jpg', alt='')
-        figure.entry.web
-          img(src='https://lh6.googleusercontent.com/-Rtnol4sOjeo/AAAAAAAAAAI/AAAAAAAAASA/DAdcHfrBEL0/s250-c-k/photo.jpg', alt='')
-        figure.entry.web
-          img(src='https://lh5.googleusercontent.com/-Hu0cjdXeH3c/AAAAAAAAAAI/AAAAAAAAACM/7IJ-izeeTFc/s250-c-k/photo.jpg', alt='')
-        figure.entry.print
-          img(src='http://healthymidlife.com/wp-content/uploads/2012/07/ted-logo2.jpg', alt='')
-        figure.entry.ill
-          img(src='http://www.grampower.com/wp-content/uploads/2012/07/stanford-univ-logo.jpg', alt='')
-        figure.entry.logo
-          img(src='http://fiveqsontech.com/wp-content/uploads/2012/04/Sergey-Brin.jpeg', alt='')
-        figure.entry.ill
+        figure.entry.organizers
+            .information
+              .name 
+                b Christian Sanz
+              .role Geeklist Cofounder
+            a(href='http://twitter.com/csanz', target="_blank")
+             img(src='https://sphotos-b.xx.fbcdn.net/hphotos-ash4/404054_10150978162322411_1960154309_n.jpg', alt='')
+
+
+        figure.entry.organizers
+          .information
+              .name 
+                b Jyri Engeström
+              .role Product at Groupon
+          a(href="https://twitter.com/jyri", target="_blank")
+            img(src='https://lh6.googleusercontent.com/-Rtnol4sOjeo/AAAAAAAAAAI/AAAAAAAAASA/DAdcHfrBEL0/s250-c-k/photo.jpg', alt='')
+        figure.entry.judge
+          .information
+              .name 
+                b Dale Dougherty
+              .role O'Reilly Media Cofounder
+          a(href="https://twitter.com/dalepd", target="_blank")
+            img(src='http://summit.oshwa.org/files/2012/09/DaleDougherty-sq-300x300.png', alt='')
+        figure.entry.contributor
+          .information
+              .name 
+                b Jen Canfield
+              .role Marketing Manager at UpOut
+          img(src='http://m.c.lnkd.licdn.com/media/p/1/000/0c9/012/00d84c7.jpg', alt='')
+        figure.entry.contributor
+          .information
+              .name 
+                b Corey Haggard
+              .role Victorious pixel crafter
+          a(href="https://twitter.com/coreyhaggard", target="_blank")
+            img(src='https://twimg0-a.akamaihd.net/profile_images/2710085737/68d63f4d1d89c3e387abe35d790c4f9b.png', alt='')
+
+        figure.entry.sponsors
+          a(href="https://twitter.com/WindowsAzure", target="_blank")
+            img(src="https://twimg0-a.akamaihd.net/profile_images/2620080635/qo0dbb36lwvnz8mylvwh.jpeg", alt="")
+        figure.entry.sponsors
+          img(src="img/portfolio-image.jpg", alt="")
+        figure.entry.sponsors
           img(src='http://blog.zintro.com/wp-content/uploads/2011/11/groupon-logo.png', alt='')
-        figure.entry.ill
-          img(src='http://www.theiphoneaddict.com/wp-content/uploads/2012/06/facebook_logo_square.gif', alt='')
-        figure.entry.video
-          img(src='https://twimg0-a.akamaihd.net/profile_images/2710085737/68d63f4d1d89c3e387abe35d790c4f9b.png', alt='')
-        figure.entry.ill
+        figure.entry.sponsors
+          img(src="img/portfolio-image.jpg", alt="")
+        figure.entry.sponsors
           img(src='http://nodecopter.com/img/sponsors/geeklist.png', alt='')
-        figure.entry.ill
-          img(src='http://www.theiphoneaddict.com/wp-content/uploads/2012/06/facebook_logo_square.gif', alt='')
-        figure.entry.video
-          img(src='https://twimg0-a.akamaihd.net/profile_images/2710085737/68d63f4d1d89c3e387abe35d790c4f9b.png', alt='')
-        figure.entry.ill
-          img(src='http://blog.zintro.com/wp-content/uploads/2011/11/groupon-logo.png', alt='')
+
+
 // End PORTFOLIO
 // CONTACT
 #contact.row.section
   // MAP ###############################################
   div
     .container
-      h2 Venue
-      p.intro Trials will held in San Francisco at the Groupon offices
+      h2 Venue & Contact
+      p.intro The Drone Olympics will held in San Francisco at the Groupon offices
     #map.container.hidden-phone  
     // /container
   // /contact
@@ -128,25 +146,25 @@
     .container
       .row
         .span8
-          h3 Get in touch with us.
-          p Fill out the form below and we will get back to you soon.
-          form#contact-form
-            fieldset
-              .row
-                .holder.span8
-                  .message
-                    .top
-                    .contents
-                      #alert
-                    .bottom
-                .field.span8
-                  input#name.input-text.m-wrap.m-ctrl-large(type='text', value='', name='name', placeholder='Your Name')
-                .field.span8
-                  input#email.input-text.m-wrap.m-ctrl-large(type='text', value='', name='email', placeholder='Your Email Address')
-                .field.span8
-                  textarea#message.input-textarea.m-wrap.m-ctrl-large(placeholder='Your Message', name='message')
-                .field.span8
-                  input.m-btn.green(type='submit', value='Submit Entry')
+          //h3 Get in touch with us.
+            p Fill out the form below and we will get back to you soon.
+            form#contact-form
+              fieldset
+                .row
+                  .holder.span8
+                    .message
+                      .top
+                      .contents
+                        #alert
+                      .bottom
+                  .field.span8
+                    input#name.input-text.m-wrap.m-ctrl-large(type='text', value='', name='name', placeholder='Your Name')
+                  .field.span8
+                    input#email.input-text.m-wrap.m-ctrl-large(type='text', value='', name='email', placeholder='Your Email Address')
+                  .field.span8
+                    textarea#message.input-textarea.m-wrap.m-ctrl-large(placeholder='Your Message', name='message')
+                  .field.span8
+                    input.m-btn.green(type='submit', value='Submit Entry')
         .span3.offset1
           h3 Venue info
           p
@@ -155,15 +173,12 @@
             | 385 Grove Street, San Francisco, CA
             br
             | San Francisco, CA
+          h3 Contact info
+          p
             br
-            | 05454
-            | Phone: (123) 456-7890
+            | Phone: 818-398-8919
             br
-            | Fax: (123) 456-7890
-            br
-            | Email: email@address.com
-            br
-            | Web: companyname.com
+            | Email: chris@geekli.st
     // /container
   // /form
   // END CONTACT FORM
