@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+PRODID:-//hacksw/handcal//NONSGML v1.0//EN
+VERSION:2.0
+BEGIN:VEVENT
+UID:NodeStack Online Conference marketing@joyent.com
+CLASS:PUBLIC
+DESCRIPTION:NodeStack Online Conference with Nodejitsu MongoDB 10gen Clock and Joyent discussing the emerging enterprise stack.
+SUMMARY:NodeStack Online Conference
+URL:http://joyent.com/company/events
+DTSTART:20121017T160000Z
+DTEND:20121017T200000Z
+END:VEVENT
+END:VCALENDAR
