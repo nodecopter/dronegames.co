@@ -1,12 +1,24 @@
 @import 'nib'
 
+body
+  background-image url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/subtle_dots.png)
+
+
+shade()
+  box-shadow: 0 1px 5px 0 rgba(199, 199, 199, 0.60), 0 0 3px 1px rgba(128, 128, 128, 0.10)
 
 coolify()
-  border 1px solid light
+  border 1px solid gray
   border-radius 5px
   margin: 5px 0
   padding: 8px 10px
-  box-shadow: 0 1px 1px 0 rgba(light, 0.6), 0 0 3px 1px rgba(light, 0.1)
+  box-shadow: 0 1px 1px 0 rgba(gray, 0.6), 0 0 3px 1px rgba(gray, 0.1)
+
+img 
+ display: inline-block;
+
+.navbar-fixed-top
+ shade()
 
 .information
   position: absolute;
@@ -25,3 +37,4 @@ coolify()
   padding: 5px;
   color: whiteSmoke;
   font-size: 13px;
+

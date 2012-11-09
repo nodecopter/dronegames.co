@@ -74,7 +74,7 @@ nav.primary ul li a:hover {
 } 
 
 
-/*PORTFOLIO*/
+/*judges*/
 
 .isotope-item { 
   z-index: 2; 
@@ -134,23 +134,27 @@ h2.explain{line-height:34px;}
 .homecallout{color:#A2A9B4;}
 .homecallout h2{font:bold 18px/40px "Open Sans",Helvetica,Arial,Sans-serif; color:#2E3846;}
 
+/*Sponsors*/
+#sponsors{padding-top:80px; margin-top:80px; margin-bottom:80px; padding-bottom:80px;}
 
+/*Hackers*/
+#hackers{padding-top:100px; margin-top: 80px; padding-bottom:80px;}
 
-/*PORTFOLIO*/
-#portfolio{padding-top:100px; margin-top: 80px; padding-bottom:80px;}
+/*judges*/
+#judges{padding-top:100px; margin-top: 80px; padding-bottom:80px;}
 .port{background:#eee; padding:80px 0; color: #000;}
-.portfolio .span4{margin-bottom:12px;}
+.judges .span4{margin-bottom:12px;}
 
-.portfoliocarousel h2{font-size:12px; line-height:14px; text-transform: uppercase;}
-.portfoliocarousel p{margin:0px;}
+.judgescarousel h2{font-size:12px; line-height:14px; text-transform: uppercase;}
+.judgescarousel p{margin:0px;}
 
-.portfolio figure{margin:0; margin-right:5px; margin-bottom:10px;}
+.judges figure{margin:0; margin-right:5px; margin-bottom:10px;}
 
 
 /*CONTACT*/
 .contact{}
 #contact{padding-top:80px; padding-bottom:80px;}
-#contact h2,#about h2,#portfolio h2{font-weight:200; text-align: center; font-size:3em; color: #f30; text-transform:uppercase; line-height:2em;}
+#contact h2,#about h2,#judges h2, #sponsors h2, #hackers h2{font-weight:200; text-align: center; font-size:3em; color: #f30; text-transform:uppercase; line-height:2em;}
 
 
 /*CONTACT Map*/
@@ -177,3 +181,56 @@ h2.explain{line-height:34px;}
 /*ABOUT*/
 #about{padding-top:80px; margin-top:80px; margin-bottom:80px; padding-bottom:80px;}
 .about{background: #121210; color: #CBCBCB; padding:80px 0; }
+
+#content .sponsors {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+#content .sponsors li {
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+#content .sponsors li img {
+  border: 1px solid #eee;
+  padding: 10px;
+  margin-right: 13px;
+  margin-bottom: 13px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -o-transition: -webkit-filter 0.4s ease-in-out;
+  -ms-transition: -webkit-filter 0.4s ease-in-out;
+  -moz-transition: -webkit-filter 0.4s ease-in-out;
+  -webkit-transition: -webkit-filter 0.4s ease-in-out;
+  transition: -webkit-filter 0.4s ease-in-out;
+  opacity: 0.8;
+  max-width: 400px;
+  max-height: 400px;
+}
+#content .sponsors li img:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  opacity: 1;
+  border: 1px solid #ccc;
+}
+#content .sponsors li:nth-of-type(3n) img {
+  margin-right: 0;
+}
+
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  margin-bottom: 0;
+}
+
