@@ -1,4 +1,11 @@
-
+#myModal(class="modal hide fade", tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+  .modal-header
+  button(type="button", class="close", data-dismiss="modal", aria-hidden="true", value="x")
+  h3#myModalLabel(style="margin-left: 12px") Registration still closed
+  .modal-body
+    p If you are a developer email us at chris@geekli.st
+  .modal-footer
+    button.btn(data-dismiss="modal", aria-hidden="true") Close
 // CONTENT
 .row.header
   // NAV
@@ -18,6 +25,8 @@
               a.anchorLink(href='#home') Home
             li
               a.anchorLink(href='#about') About
+            li
+              a.anchorLink(href='#schedule') Schedule
             li
               a.anchorLink(href='#sponsors') Sponsors            
             li
@@ -61,15 +70,47 @@ div(style="position: absolute;margin-top: -40px;margin-left: 20px;width: 98%;")
           p
             | A one day competition with top developers programming against Parrot AR Drones and demoing to world class judges. 
         .span4
-          h3 Challenges
+          h3 Challenges & Rules
           p
-            | The challenges consists of precision landing, picking up items, obstacle course and synchronized flying.
+            | The challenges can vary from precision landing, picking up items, obstacle course and synchronized flying.  All teams need to come in with complete programs the day of the olympics.
+        
         .span4
           img(src="https://tito-production.s3.amazonaws.com/uploads/event/logo/155/display_skitched-58.png", style="width: 35px;display: inline-block;vertical-align: middle;")
           h3(style="display: inline-block;vertical-align: middle;margin-left: 5px;") #MiniNodeCopter
           p
             | Hackers choosing to program the drones using Node.js and using any style they can enter our #MiniNodeCopter event, they'll be able to demo to the judges as well. 
 
+
+#schedule.row-fluid.section
+  .container
+    .explain
+      h2 Schedule
+
+      .row-fluid
+        .span4
+          h3 Drone Hack Nights 
+          p
+            | Hack Nights will be held on the following dates: 
+            ul
+              li Fri 9, 16, 23, 30th Nov
+            | All Hack Nights will be at Groupon SF, 385 Grove St.  This is a chance for you to work on your demos prior to the Olympics. 
+        .span4
+          h3 Olympics - December 1st
+          p
+            ul 
+              li 9am registration starts
+              li 9-12pm trials / test your drones
+              li 12pm welcome & team intros
+              li(style="background-color: lightyellow;font-weight: bold") 12-1pm demos (come prepared!)
+              li 1pm main event
+              li 3pm judging & prizes
+        .span4
+          h3 Team Criteria
+          p 
+            ul 
+              li Experience with robotics (a plus)
+              li 4+ years of Engineering Experience (must have)
+              li Experience with Node.js (a plus)
 
 // Sponsors
 #sponsors.row.section
@@ -245,15 +286,6 @@ script(type='text/javascript')
   longitude: -122.422655,
   zoom: 15, });
   });
-
-#myModal(class="modal hide fade", tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
-  .modal-header
-  button(type="button", class="close", data-dismiss="modal", aria-hidden="true", value="x")
-  h3#myModalLabel(style="margin-left: 12px") Registration still closed
-  .modal-body
-    p If you are a developer email us at chris@geekli.st
-  .modal-footer
-    button.btn(data-dismiss="modal", aria-hidden="true") Close
 
 script(type='text/javascript')
   $(document).ready(function() {
