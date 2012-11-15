@@ -63,23 +63,42 @@ div(style="position: absolute;margin-top: -40px;margin-left: 20px;width: 98%;")
     .explain
       h2 info
       p.intro
-        | Top developers compete on a series of drone programming challenges
+        | A full day of programming flying robots with node.js
       .row-fluid
         .span4
           h3 Details
           p
-            | A one day competition with top developers programming against Parrot AR Drones and demoing to world class judges. 
-        .span4
-          h3 Challenges & Rules
-          p
-            | The challenges can vary from precision landing, picking up items, obstacle course and synchronized flying.  All teams need to come in with complete programs the day of the olympics.
+            | A full day event where teams of 2 or 3 get together to hack on flying robots using javascript. 
+            | Each team will receive one Parrot AR Drone 2.0 and spend the day programming and playing with it.  
+            a(href="http://www.youtube.com/watch?v=wVBBBBrDJJE&feature=plcp", target="_blank") Here is one of the drones in action.
+            |   At the end of the day, each team will get to present their work to the other attendees and judges.
         
         .span4
           img(src="https://tito-production.s3.amazonaws.com/uploads/event/logo/155/display_skitched-58.png", style="width: 35px;display: inline-block;vertical-align: middle;")
-          h3(style="display: inline-block;vertical-align: middle;margin-left: 5px;") #MiniNodeCopter
+          h3(style="display: inline-block;vertical-align: middle;margin-left: 5px;") #NodeCopter
           p
-            | Hackers choosing to program the drones using Node.js and using any style they can enter our #MiniNodeCopter event, they'll be able to demo to the judges as well. 
-
+            | Before 
+            a(href="http://2012.jsconf.eu/", target="_blank") JSConf.eu
+            |  , the amazing 
+            a(href="https://twitter.com/felixge") Felix Geisendörfer 
+            |  wrote a library to 
+            a(href="https://github.com/felixge/node-ar-drone") control the Parrot AR Drone 2.0
+            |  with javascript using node.js. He also wrote 
+            a(href="https://github.com/felixge/node-cross-compiler", target="_blank") a tool to install node.js ON THE DRONE
+            |  . 
+        .span4
+          h3 History 
+          p Before JSConf, the Berlin.js team held the first 
+            a(href="http://nodecopter.com/", target="_blank") Nodecopter 
+            |  event, with 20 teams hacking on everything from controlling drones with Wii controllers, to programming their drones to see red and charge. 
+            a(href="http://www.mikealrogers.com/posts/hella-copters.html", target="_blank") Read Mikeal Rogers's blog post
+            |  for a full report.
+      // .row-fluid 
+        p.intro
+          | Photos from the NodeCopter Dublin event 
+        .span12
+          p 
+            i(style="height: 206px;width: 206px;background-image: url(https://sphotos-a.xx.fbcdn.net/hphotos-prn1/p206x206/60341_10151071433922411_163515433_n.jpg);") 
 
 #schedule.row-fluid.section
   .container
@@ -88,29 +107,27 @@ div(style="position: absolute;margin-top: -40px;margin-left: 20px;width: 98%;")
 
       .row-fluid
         .span4
-          h3 Drone Hack Nights 
+          h3 Casual Drone Hack Nights 
           p
             | Hack Nights will be held on the following dates: 
             ul
               li Fri 9, 16, 23, 30th Nov
-            | All Hack Nights will be at Groupon SF, 385 Grove St.  This is a chance for you to work on your demos prior to the Olympics. 
+            | All Hack Nights will be at Groupon SF, 385 Grove St.   
         .span4
-          h3 Olympics - December 1st
+          h3 December 1st
           p
             ul 
-              li 9am registration starts
-              li 9-12pm trials / test your drones
-              li 12pm welcome & team intros
-              li(style="background-color: lightyellow;font-weight: bold") 12-1pm demos (come prepared!)
-              li 1pm main event
-              li 3pm judging & prizes
+              li 09:00 - 10:00 Registration
+              li 10:00 - 10:30 Intro talk
+              li 10:30 - 10:45 Find a team / Get a drone
+              li(style="background-color: lightyellow;font-weight: bold") 10:30 - 18:00 Drone hacking
+              li 18:00 Demo Time / Judging
         .span4
-          h3 Team Criteria
+          h3 Hacker Criteria
           p 
             ul 
-              li Experience with robotics (a plus)
-              li 4+ years of Engineering Experience (must have)
-              li Experience with Node.js (a plus)
+              li LOVE ROBOTS & JavaScript!
+              li Node.js 
 
 // Sponsors
 #sponsors.row.section
@@ -134,7 +151,7 @@ div(style="position: absolute;margin-top: -40px;margin-left: 20px;width: 98%;")
 #judges.row.section
   .container
     h2 Judges
-    p.intro World class judges ranging from tech to education and entertainment. 
+    p.intro Our awesome judges. 
     // Start Portfolio Navigation
       nav.primary.m-btn-group.toggle-buttons.clearfix
         ul
