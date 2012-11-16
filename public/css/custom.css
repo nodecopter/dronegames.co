@@ -140,6 +140,9 @@ h2.explain{line-height:34px;}
 /*Hackers*/
 #hackers{padding-top:100px; margin-top: 80px; padding-bottom:80px;}
 
+/*Hackers*/
+#prize{padding-top:100px; margin-top: 80px; padding-bottom:80px;}
+
 /*judges*/
 #judges{padding-top:100px; margin-top: 80px; padding-bottom:80px;}
 .port{background:#eee; padding:80px 0; color: #000;}
@@ -154,7 +157,7 @@ h2.explain{line-height:34px;}
 /*CONTACT*/
 .contact{}
 #contact{padding-top:80px; padding-bottom:80px;}
-#contact h2,#about h2,#judges h2, #sponsors h2, #hackers h2, #schedule h2{font-weight:200; text-align: center; font-size:3em; color: #f30; text-transform:uppercase; line-height:2em;}
+#contact h2,#about h2,#judges h2, #sponsors h2, #hackers h2, #prize h2, #schedule h2{font-weight:200; text-align: center; font-size:3em; color: #f30; text-transform:uppercase; line-height:2em;}
 
 
 /*CONTACT Map*/
