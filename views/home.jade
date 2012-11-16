@@ -6,6 +6,24 @@
     p If you are a developer email us at apply@droneolympics.com
   .modal-footer
     button.btn(data-dismiss="modal", aria-hidden="true") Close
+
+
+#myPressModal(class="modal hide fade", tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+  .modal-header
+  button(type="button", class="close", data-dismiss="modal", aria-hidden="true", value="x")
+  h3#myModalLabel(style="margin-left: 12px")Press
+  .modal-body
+    p 
+       ul(style="list-style-type: none;") 
+        li 
+          .logo(style="display:inline-block")
+            img(src="https://twimg0-a.akamaihd.net/profile_images/1798484398/S_Twitter_white-resize.png", style="width:50px")
+          .link(style="display:inline-block")
+            a(href="http://roboticsclub.stanford.edu/freshman-enter-drone-olympics", target="_blank") Freshman Enter Drone Olympics
+  .modal-footer
+    button.btn(data-dismiss="modal", aria-hidden="true") Close
+
+
 // CONTENT
 #home
 .row.header
@@ -40,6 +58,8 @@
               a.anchorLink(href='#contact') Venue
             li
               a(href='javascript:$("#myModal").modal({})') Apply
+            li
+              a(href='javascript:$("#myPressModal").modal({})') Press
 
 // Start Callout
 .full.callout
