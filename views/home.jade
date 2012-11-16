@@ -7,6 +7,7 @@
   .modal-footer
     button.btn(data-dismiss="modal", aria-hidden="true") Close
 // CONTENT
+#home
 .row.header
   // NAV
   nav.navbar.navbar-fixed-top
@@ -42,6 +43,20 @@
 .full.callout
   .container
     .row
+      .code(style="position:absolute;z-index:30000;") 
+        pre(style="background-color: transparent;color: #D8D8D8;border: 0;margin-left: 50px;") 
+          | drone.js
+          | var arDrone = require('ar-drone');
+          | var client = arDrone.createClient();
+          | client.takeoff();
+          | client
+          |  .after(5000, function() {
+          |    this.clockwise(0.5);
+          |  })
+          |  .after(3000, function() {
+          |    this.stop();
+          |    this.land();
+          |  });
       .span12.companycallout
         h1 
         p
@@ -56,6 +71,9 @@ div(style="position: absolute;margin-top: -40px;margin-left: 20px;width: 98%;")
     param(name="wmode", value="transparent")
     embed(wmode="transparent", allowscriptaccess="always", height="18", src="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F64294014&amp;auto_play=false&amp;player_type=tiny&amp;font=Arial&amp;color=d9d9d9",type="application/x-shockwave-flash", width="100%")  
 
+.credit(style="text-align: right;margin-right: 50px;font-size: 12px;color: #999898;margin-top: 5px;") Video taken at the  
+  a(href="http://nodecopter.com/2012/dublin/oct-20") NodeCopter event in Dublin 
+  | by Christian Sanz
 // End Callout
 // Start About
 #about.row-fluid.section
@@ -63,7 +81,7 @@ div(style="position: absolute;margin-top: -40px;margin-left: 20px;width: 98%;")
     .explain
       h2 info
       p.intro
-        | Programming flying robots with node.js
+        | Programming drones using JavaScript
       .row-fluid
         .span4
           h3 Details
@@ -91,9 +109,9 @@ div(style="position: absolute;margin-top: -40px;margin-left: 20px;width: 98%;")
             |  with javascript using node.js. He also wrote 
             a(href="https://github.com/felixge/node-cross-compiler", target="_blank") a tool to install node.js ON THE DRONE
             | . 
-            a(href="https://www.facebook.com/media/set/?set=a.10151071432512411.423699.626637410&type=3") Here are photos of the event.
+            a(href="https://www.facebook.com/media/set/?set=a.10151071432512411.423699.626637410&type=3") Here are photos of the event. 
         .span4
-          h3 History 
+          h3 History of Node.js and Drones
           p Before JSConf, the Berlin.js team held the first 
             a(href="http://nodecopter.com/", target="_blank") Nodecopter 
             |  event, with 20 teams hacking on everything from controlling drones with Wii controllers, to programming their drones to see red and charge. 
@@ -158,21 +176,7 @@ div(style="position: absolute;margin-top: -40px;margin-left: 20px;width: 98%;")
   .container
     h2 Judges
     p.intro Our awesome judges. 
-    // Start Portfolio Navigation
-      nav.primary.m-btn-group.toggle-buttons.clearfix
-        ul
-          li
-            a.m-btn.selected(href='#', data-filter='*') All
-          li
-            a.m-btn(href='#', data-filter='.organizers') Organizers
-          li
-            a.m-btn(href='#', data-filter='.sponsors') Primum Sponsors
-          li
-            a.m-btn(href='#', data-filter='.judge') Judges
-          li
-            a.m-btn(href='#', data-filter='.contributor') Contributors
-          li
-            a.m-btn(href='#', data-filter='.print') Media Sponsors
+
 
     section.main.clearfix
       .judges
@@ -216,7 +220,53 @@ div(style="position: absolute;margin-top: -40px;margin-left: 20px;width: 98%;")
 #hackers.row.section
   .container
     h2 Teams
-    p.intro To be announced
+    p.intro Drone hackers will be announced below
+
+    section.main.clearfix(style="margin:0px")
+      h3 Individual
+      .judges
+
+         figure.entry.judge
+          .information
+              .name 
+                b David Chen
+              .role Engineer at Twitter
+          a(href="https://github.com/chenosaurus", target="_blank")
+            img(src='http://m.c.lnkd.licdn.com/media/p/2/000/0fa/3eb/2b8512c.jpg', alt='')
+
+         figure.entry.judge
+          .information
+              .name 
+                b Nathan Rajlich
+              .role Nodejs core comitter
+          a(href="https://github.com/tootallnate", target="_blank")
+            img(src='https://twimg0-a.akamaihd.net/profile_images/1410702232/5dc62d823e229c44665830bbe429c338.jpeg', alt='')
+    section.main.clearfix(style="margin:0px")
+      h3 Team I - DroneOne
+      .judges
+         figure.entry.judge
+          .information
+              .name 
+                b John Backus
+              .role CS Student at Stanford
+          a(href="http://johnback.us/", target="_blank")
+            img(src='http://f.cl.ly/items/2y082h3D0E111i3F173H/273786_617637405_202269750_n.jpg', alt='')
+         figure.entry.judge
+          .information
+              .name 
+                b Eric Smalls
+              .role CS Student at Stanford
+          a(href="http://www.ericsmalls.com/", target="_blank")
+            img(src='https://lh3.googleusercontent.com/-4QLgV2MsEPg/UJoHj1ESvGI/AAAAAAAAB1o/EpfQvJtg6yg/s320/385737_425665680824156_1945074940_n+%281%29.jpeg', alt='')
+         figure.entry.judge
+          .information
+              .name 
+                b Omar Rizwan
+              .role CS Student at Stanford
+          a(href="http://omarrizwan.com/", target="_blank")
+            img(src='https://secure.gravatar.com/avatar/fb01c1e60bb91d2f8b5b0039990fbb82?s=400&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png', alt='')
+
+
 
 // CONTACT
 #contact.row.section
@@ -254,6 +304,11 @@ div(style="position: absolute;margin-top: -40px;margin-left: 20px;width: 98%;")
                 a(href="https://twitter.com/coreyhaggard", target="_blank")
                   img(src='https://twimg0-a.akamaihd.net/profile_images/2710085737/68d63f4d1d89c3e387abe35d790c4f9b.png', alt='', style="max-width:60px")
 
+              figure.entry.contributor(style="width:60px")
+                a(href="https://twitter.com/neverbendeasy", target="_blank")
+                  img(src='http://f.cl.ly/items/1O2I1q1X1H2X2f03373l/Screen%20Shot%202012-11-15%20at%2010.02.29%20PM.png', alt='', style="max-width:60px")
+
+
           //h3 Get in touch with us.
             p Fill out the form below and we will get back to you soon.
             form#contact-form
@@ -287,6 +342,9 @@ div(style="position: absolute;margin-top: -40px;margin-left: 20px;width: 98%;")
             | Phone: 818-398-8919
             br
             | Email: info@droneolympics.com
+            br
+            | Twitter: 
+            a(href="http://twitter.com/droneolympics") @droneolympics
     // /container
   // /form
   // END CONTACT FORM
