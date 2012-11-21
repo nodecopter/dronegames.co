@@ -1,12 +1,3 @@
-#myModal(class="modal hide fade", tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
-  .modal-header
-  button(type="button", class="close", data-dismiss="modal", aria-hidden="true", value="x")
-  h3#myModalLabel(style="margin-left: 12px") Registration still closed
-  .modal-body
-    p If you are a developer email us at apply@droneolympics.com
-  .modal-footer
-    button.btn(data-dismiss="modal", aria-hidden="true") Close
-
 
 #myPressModal(class="modal hide fade", tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
   .modal-header
@@ -43,19 +34,20 @@
             li
               a.anchorLink(href='#home') Home
             li
-              a(href='https://tito.io/nodecopter/drone-olympics-sf', style="font-weight:bold") Register 
+              a(href='http://register.droneolympics.com/', style="font-weight:bold") Register 
             li
               a.anchorLink(href='#about') Info
             li
               a.anchorLink(href='#schedule') Schedule
-            li
-              a.anchorLink(href='#sponsors') Sponsors            
+          
             li
               a.anchorLink(href='#judges') Judges
             li
-              a.anchorLink(href='#hackers') Hackers
+              a.anchorLink(href='#hackers') Participants
             li
               a.anchorLink(href='#contact') Venue
+            li
+              a.anchorLink(href='#sponsors') Sponsors  
 
 
 // Start Callout
@@ -100,32 +92,32 @@ div(style="position: absolute;margin-top: -40px;margin-left: 20px;width: 98%;")
     .explain
       h2 info
       p.intro
-        | A full-day programming competition powered by drones and JavaScript
+        | A programming competition powered by drones and JavaScript
       .row-fluid
         .span4
           h3 Competition
           p
-            | Drone Olympics is a full day 
+            | Drone Olympics is a 
             a(href="http://nodecopter.com", target="_blank") NodeCopter-Style
             |  programming competition 
             b(style="background-color: lightyellow;font-weight: bold") powered by drones and JavaScript
             | . 
-            | The teams are 2 to 3 max. 
-            | Each team will receive one Parrot AR Drone 2.0 and spend the day programming and playing with it.  
+            | Hackers will receive one Parrot AR Drone 2.0 so they can work on their project.  
             a(href="http://www.youtube.com/watch?v=wVBBBBrDJJE&feature=plcp", target="_blank") Here is one of the drones in action.
-            |   At the end of the day, each team will get to present their work to the other attendees and judges.
+            |   The day of the event hackers will get a chance to present their work to other attendees and judges.   Judges will select the winner(s).
         
         .span4
           img(src="https://tito-production.s3.amazonaws.com/uploads/event/logo/155/display_skitched-58.png", style="width: 35px;display: inline-block;vertical-align: middle;")
           h3(style="display: inline-block;vertical-align: middle;margin-left: 5px;") ar-drone Node.js Library
           p
+            | You can use any language, however, 
             | Before 
             a(href="http://2012.jsconf.eu/", target="_blank") JSConf.eu
             |  , the amazing 
             a(href="https://twitter.com/felixge") Felix Geisendörfer 
             |  wrote a library to 
             a(href="https://github.com/felixge/node-ar-drone") control the Parrot AR Drone 2.0
-            |  with javascript using node.js. He also wrote 
+            |  with javascript using node.js. So basically you can program in JavaScript. He also wrote 
             a(href="https://github.com/felixge/node-cross-compiler", target="_blank") a tool to install node.js ON THE DRONE
             | . 
             a(href="https://www.facebook.com/media/set/?set=a.10151071432512411.423699.626637410&type=3") Here are photos of the event. 
@@ -150,21 +142,20 @@ div(style="position: absolute;margin-top: -40px;margin-left: 20px;width: 98%;")
 
       .row-fluid
         .span4
-          h3 Casual Drone Hack Nights 
+          h3 Development 
           p
-            | Hack Nights will be held on the following dates: 
-            ul
-              li Fri 9, 16, 23, 30th Nov
-            | All Hack Nights will be at Groupon SF, 385 Grove St.   
+            | We encourage all hackers to bring the finished work the day of the event. 
+            | You'll have a chance to test it out, but not much time to put together something too impressive. 
+            | We have a limited amount of drones, so check with us to see if we have a spare one for you, if not, you should be able to get one at 
+            a(href="https://plus.google.com/116250138647373632188/about?gl=us&hl=en", target="_blank") Costco. 
         .span4
           h3 December 1st
           p
             ul 
-              li 09:00 - 10:00 Registration
-              li 10:00 - 10:30 Intro talk
-              li 10:30 - 10:45 Find a team / Get a drone
-              li(style="background-color: lightyellow;font-weight: bold") 10:30 - 18:00 Drone hacking
-              li 18:00 Demo Time / Judging
+              li 10:00 Registration
+              li 10:00 - 12:00 Test your drones / Prepare for DEMO 
+              li 12:00 - 01:00 LUNCH (Surprise)
+              li(style="background-color: lightyellow;font-weight: bold") 01:00 - 15:00 DEMO TIME!
         .span4
           h3 Hacker Criteria
           p 
@@ -172,22 +163,7 @@ div(style="position: absolute;margin-top: -40px;margin-left: 20px;width: 98%;")
               li LOVE ROBOTS & JavaScript!
               li Node.js 
 
-// Sponsors
-#sponsors.row.section
-  .container
-    h2 sponsors
-    p.intro Companies helping make this possible
-    .row-fluid
-    ul.sponsors
-      li 
-        a(href="http://groupon.com/", target="_blank")
-          img(src="http://tctechcrunch2011.files.wordpress.com/2012/05/groupon-logo1.jpg")
-      li 
-        a(href="http://aka.ms/nodecoptersf", target="_blank")
-          img(src="http://nodecopter.com/img/sponsors/windowsazure.png")
-      li 
-        a(href="http://geekli.st/", target="_blank")
-          img(src="http://nodecopter.com/img/sponsors/geeklist.png")
+
       
 
 // Judges
@@ -238,8 +214,8 @@ div(style="position: absolute;margin-top: -40px;margin-left: 20px;width: 98%;")
 // Judges
 #hackers.row.section
   .container
-    h2 Hackers
-    p.intro Drone hackers will be announced below
+    h2 Participants
+    p.intro Drone hackers & Participants
 
     section.main.clearfix(style="margin:0px")
       .judges
@@ -289,32 +265,41 @@ div(style="position: absolute;margin-top: -40px;margin-left: 20px;width: 98%;")
           a(href="http://omarrizwan.com/", target="_blank")
             img(src='https://secure.gravatar.com/avatar/fb01c1e60bb91d2f8b5b0039990fbb82?s=400&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png', alt='')
 
-    br
-    br
-    p.intro More teams will be announced here...
-
-
-
 
 // Judges
-#prize.row.section
+  #prize.row.section
+    .container
+      h2 Prize
+      p.intro Awesome Prizes for the Winners!
+      p 
+        | Winners will get an interview with 
+        a(href="http://scobleizer.com/", target="_blank") Robert Scoble 
+        | on his show and an invitation to attend the next DroneOlympics with all expenses paid (which may happen in Chile)
+
+      i(style="height: 206px;width: 206px;background-image: url(https://sphotos-a.xx.fbcdn.net/hphotos-prn1/p206x206/60341_10151071433922411_163515433_n.jpg);") 
+      .image(style="display:inline-block")
+        i(style="height: 300px;background-image: url(http://hkham.files.wordpress.com/2007/10/robert-scoble-1.jpg);display: block;width: 500px;")
+      .image(style="display:inline-block")
+        i(style="height: 300px;background-image: url(http://upload.wikimedia.org/wikipedia/commons/c/ce/Santiago_en_invierno.jpg);display: block;width: 400px;background-size: 400px 300px;")
+      .image(style="display:inline-block")
+        i(style="height: 300px;background-image: url(http://www.sacred-destinations.com/spain/images/santiago/santiago-cathedral-cc-therefromhere.jpg);display: block;width: 270px;background-size: 400px 300px;")
+
+// Sponsors
+#sponsors.row.section
   .container
-    h2 Prize
-    p.intro Awesome Prizes for the Winners!
-    p 
-      | Winners will get an interview with 
-      a(href="http://scobleizer.com/", target="_blank") Robert Scoble 
-      | on his show and an invitation to attend the next DroneOlympics with all expenses paid (which may happen in Chile)
-
-    i(style="height: 206px;width: 206px;background-image: url(https://sphotos-a.xx.fbcdn.net/hphotos-prn1/p206x206/60341_10151071433922411_163515433_n.jpg);") 
-    .image(style="display:inline-block")
-      i(style="height: 300px;background-image: url(http://hkham.files.wordpress.com/2007/10/robert-scoble-1.jpg);display: block;width: 500px;")
-    .image(style="display:inline-block")
-      i(style="height: 300px;background-image: url(http://upload.wikimedia.org/wikipedia/commons/c/ce/Santiago_en_invierno.jpg);display: block;width: 400px;background-size: 400px 300px;")
-    .image(style="display:inline-block")
-      i(style="height: 300px;background-image: url(http://www.sacred-destinations.com/spain/images/santiago/santiago-cathedral-cc-therefromhere.jpg);display: block;width: 270px;background-size: 400px 300px;")
-
-
+    h2 sponsors
+    p.intro Companies helping make this possible
+    .row-fluid
+    ul.sponsors
+      li 
+        a(href="http://groupon.com/", target="_blank")
+          img(src="http://tctechcrunch2011.files.wordpress.com/2012/05/groupon-logo1.jpg")
+      li 
+        a(href="http://aka.ms/nodecoptersf", target="_blank")
+          img(src="http://nodecopter.com/img/sponsors/windowsazure.png")
+      li 
+        a(href="http://geekli.st/", target="_blank")
+          img(src="http://nodecopter.com/img/sponsors/geeklist.png")
 
 
 
