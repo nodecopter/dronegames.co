@@ -1,9 +1,9 @@
 {
     "name"        : "DroneOlympics"
   , "version"     : "0.0.1"
-  , "homepage"    : "http://aqueous-woodland-8349.herokuapp.com/"
-  , "description" : "PeerGraph"
-  , "author"      : "Christian Sanz <chrissanz@gmail.com>"
+  , "homepage"    : "http://droneolympics.com/"
+  , "description" : "DroneOlympics"
+  , "author"      : "Christian Sanz <chris@sanz.io>"
   , "dependencies": {
         "async"             : "0.1.18"
       , "express"           : "2.5.4"
